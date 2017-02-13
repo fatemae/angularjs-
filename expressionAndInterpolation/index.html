@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="feedApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Hello Angular</title>
+  </head>
+  <body>
+    <h1>Expressions And Interpolations</h1>
+    <div ng-controller="MsgController">
+      {{name}} has a message for you: <br>
+      {{sayMessage()}}
+      <div>
+        <button ng-click="feedFatema()">Feed Fatema</button>
+        <br>
+        <img ng-src="images/{{stateOfBeing}}.jpg">
+      </div>
+    </div>
+  </body>
+</html>
