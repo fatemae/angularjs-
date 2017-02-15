@@ -11,8 +11,14 @@
     <div ng-controller="CounterCtrl">
       <button ng-click="showNumberOfWatchers()">
         Log # of Watchers</button>
+        <input type="text" ng-model="name">
         <div>
-
+          <button ng-click="countOnce()">Up Once Counter(once)</button>
+          <button ng-click="incrementCounter()">increment Counter</button>
+        </div>
+        <div>
+          Once  Counter  : {{onceCounter}} <br>
+          Regular Counter : {{upCounter}}
         </div>
 
     </div>
