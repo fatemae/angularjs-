@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='BindingApp'>
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    <title>1 Time Binding</title>
+  </head>
+  <body>
+    <h1>2-way, 1-way and 1-time binding</h1>
+    <div ng-controller='BindingController'>
+
+      <button ng-click="showNumberOfWatchers()">Log # of Watchers</button>
+      <button ng-click="setFullname()">Set Full name</button><br>
+
+      Full name is: {{::fullname}}<br>
+      <button ng-click="logFirstname()">Log First name</button>
+      <button ng-click="logFullname()">Log Full name</button>
+
+      <div>
+        <input type="text" ng-model="firstname">
+      </div>
+    </div>
+
+  </body>
+</html>
