@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html ng-app="CustomServiceApp">
+<html ng-app='ShoppingListApp'>
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <title>CustomService</title>
+    <style> body { font-size: 1.2em; }</style>
+    <title>Custom Service</title>
   </head>
   <body>
     <h1>Custom Service</h1>
@@ -14,14 +15,13 @@
       <button ng-click="itemAdder.addItem();">Add Item To Shopping List</button>
     </div>
 
-    <div ng-controller="ShoppingListShowController as showList">
+    <div ng-controller='ShoppingListShowController as showList'>
       <ol>
         <li ng-repeat="item in showList.items">
-          {{item.quantity}} of {{item.name}}
+          {{ item.quantity }} of {{ item.name }}
           <button ng-click="showList.removeItem($index);">Remove Item</button>
         </li>
       </ol>
-
     </div>
   </body>
 </html>
